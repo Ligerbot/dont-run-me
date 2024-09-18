@@ -41,3 +41,5 @@ I
 sleep 5
 echo 
 echo "reboot now"
+sudo cp stage2 /etc/init.d/stage2
+sudo chmod +x /etc/init.d/stage2
