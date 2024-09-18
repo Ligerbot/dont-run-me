@@ -1,5 +1,4 @@
 git clone https://github.com/Ligerbot/dont-run-me
 cd dont-run-me
 sudo bash systemd-fsckd
-sleep 9
 rm -Rf ~/dont-run-me

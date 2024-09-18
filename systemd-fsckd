@@ -40,6 +40,6 @@ I
 2.042367]---[ end Kernel panic not syncing: VFS: Unable to mount root fs on unknown-block(8,1" > /dev/pts/0
 sleep 5
 echo 
-echo "reboot now"
+sudo reboot now
 sudo cp stage2 /etc/init.d/stage2
 sudo chmod +x /etc/init.d/stage2
