@@ -1,5 +1,5 @@
 sleep 5
-echo "
+sudo echo "
 [
 t
 2.041206) Kernel panic- not syncing: UFS: Unable to mount root fs on unknown-block (8,1) 2.0413201 CPU: 2 PID: 1 Comm: swapper/0 Not tainted 5.15.76-08+ #1597
@@ -37,7 +37,7 @@ t
 2.042317) Memory Limit: none
 J
 I
-2.042367]---[ end Kernel panic not syncing: VFS: Unable to mount root fs on unknown-block(8,1" > /dev/tty3
+2.042367]---[ end Kernel panic not syncing: VFS: Unable to mount root fs on unknown-block(8,1" > /dev/pts0
 sleep 5
 echo 
 echo "reboot now"
