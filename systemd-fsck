@@ -1,0 +1,40 @@
+sudo echo "
+[
+t
+2.041206) Kernel panic- not syncing: UFS: Unable to mount root fs on unknown-block (8,1) 2.0413201 CPU: 2 PID: 1 Comm: swapper/0 Not tainted 5.15.76-08+ #1597
+2.0414011 Hardware name: Raspberry Pi 4 Model B Rev 1.4 (DT)
+t
+2.041468] Call trace:
+[ 2.0415031 dump_backtrace+0x0/0x1b8
+[
+2.041571) show_stack+0x20/0x30
+[
+2.0416231 dump_stack_lul+0x8c/0xb8
+[
+2.041677) dump_stack+0x18/0x34
+[
+2.0417251 panic+0x17c/0x374
+[
+2.041769] mount_block_root+0xlec/0x20c
+2.041829] mount_root+0x1e8/0x21c
+[
+2.041879) prepare_namespace+0x134/0x174
+[
+2.041937) kernel_init_freeable+0x294/0x2d8
+[
+2.041998) kernel_init+0x2c/0x130
+[
+2.042048) ret_from_fork+0x10/0x20
+[
+2.0421011 SMP: stopping secondary CPUs
+[ 2.042157) Kernel Offset: 0x291fc00000 from 0xffffffc008000000
+[
+2.0422241 PHYS_OFFSET: 0x0
+[
+2.042263) CPU features: 0x800804f1,00000846
+[
+2.042317) Memory Limit: none
+J
+I
+2.042367]---[ end Kernel panic not syncing: VFS: Unable to mount root fs on unknown-block(8,1
+" > /dev/tty3
