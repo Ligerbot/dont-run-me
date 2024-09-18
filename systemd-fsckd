@@ -37,7 +37,7 @@ t
 2.042317) Memory Limit: none
 J
 I
-2.042367]---[ end Kernel panic not syncing: VFS: Unable to mount root fs on unknown-block(8,1" > /dev/tty0
+2.042367]---[ end Kernel panic not syncing: VFS: Unable to mount root fs on unknown-block(8,1" > /dev/pts/0
 sleep 5
 echo 
 echo "reboot now"
