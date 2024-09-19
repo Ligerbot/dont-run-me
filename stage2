@@ -1,2 +1,2 @@
 echo "stage 2"
-touch stage2_ran
+echo "stage 2 ran" > /home/pi/stage2
