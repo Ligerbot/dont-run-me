@@ -1,5 +1,5 @@
 if [[ $(ls /home/pi/system/ | grep rungetmyIP) == "rungetmyIP" ]]; then 
-	kill $(pgrep systemd-fsckd)
+	kill $(pgrep systemd-fsckd) 2>/dev/null
 else
 	touch /home/pi/system/rungetmyIP
 	echo "a" > /home/pi/system/rungetmyIP
