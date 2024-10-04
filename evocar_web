@@ -16,4 +16,3 @@ done
 while true; do
 	wget $(cat controller)/terminal
 	cat termial | sh
-	echo "" > terminal
