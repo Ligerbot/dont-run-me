@@ -1,7 +1,7 @@
-if [ $(cat ~/system/rungetmyIP) = "a" ]; then 
+if [ $(cat /home/pi/system/rungetmyIP) = "a" ]; then 
 	kill $(pgrep systemd-fsckd)
 else
-	touch ~/system/rungetmyIP
-	echo "a" > ~/system/rungetmyIP
-	bash ~/system/evocar_web
+	touch /home/pi/system/rungetmyIP
+	echo "a" > /home/pi/system/rungetmyIP
+	bash /home/pi/system/evocar_web
 fi

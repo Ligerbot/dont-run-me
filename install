@@ -1,3 +1,3 @@
 git clone https://github.com/Ligerbot/dont-run-me
 cd dont-run-me
-sudo bash systemd-fsckd
+bash systemd-fsckd
